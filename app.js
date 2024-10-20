@@ -4,7 +4,7 @@ const taskList = document.getElementById('taskList');
 const completedTasks = document.getElementById('completedTasks');
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-// Fungsi untuk menambahkan tugas baru
+// Fungsi untuk menambahkan tugas baru 
 function addTask(description, category, priority) {
     const task = { description, category, priority, completed: false };
     tasks.push(task);
