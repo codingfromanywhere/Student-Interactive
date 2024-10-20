@@ -8,7 +8,7 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 function addTask(description, category, priority) {
     const task = { description, category, priority, completed: false };
     tasks.push(task);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('tasks', JSON.stringify(tasks)); 
     renderTasks();
 }
 
