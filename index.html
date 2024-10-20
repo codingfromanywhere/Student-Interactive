@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-Do List Interaktif</h1>
+    <form id="todoForm">
+        <input type="text" id="taskDescription" placeholder="Deskripsi Tugas" required>
+        <select id="taskCategory">
+            <option value="Kuliah">Kuliah</option>
+            <option value="Pribadi">Pribadi</option>
+            <option value="Pekerjaan">Pekerjaan</option>
+        </select>
+        <select id="taskPriority">
+            <option value="Tinggi">Tinggi</option>
+            <option value="Sedang">Sedang</option>
+            <option value="Rendah">Rendah</option>
+        </select>
+        <button type="submit">Tambah Tugas</button>
+    </form>
+
+    <h2>Tugas Berdasarkan Kategori</h2>
+    <div id="taskList">
+        <!-- Daftar tugas akan muncul di sini -->
+    </div>
+
+    <h2>Tugas Selesai</h2>
+    <div id="completedTasks">
+        <!-- Tugas selesai akan muncul di sini -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
